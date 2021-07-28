@@ -2,7 +2,9 @@
 // You can write your code in this editor
 keyAttack = keyboard_check_pressed(ord("H")) || mouse_check_button_pressed(mb_left);
 
-switch (state) 
+if(alive)
+{
+	switch (state) 
 {
 	case PLAYERSTATE.FREE: 
 		PlayerStateFree();
@@ -11,3 +13,9 @@ switch (state)
 		PlayerStateAttackLight();
 		break;
 }
+}
+else
+{
+	sprite_index = s_player_dead;	
+}
+

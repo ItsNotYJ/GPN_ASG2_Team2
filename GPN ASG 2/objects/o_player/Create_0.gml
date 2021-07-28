@@ -3,6 +3,8 @@
 
 mv_spd = 5;
 
+alive = true;
+
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
 

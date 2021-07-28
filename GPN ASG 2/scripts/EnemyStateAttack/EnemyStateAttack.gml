@@ -28,6 +28,7 @@ function EnemyStateAttack(){
 				ds_list_add(pHitByAttack, hitID);
 				with (hitID)
 				{
+					alive = false;
 					sprite_index = s_player_dead;
 				}
 			}
