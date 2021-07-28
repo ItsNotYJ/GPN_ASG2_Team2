@@ -5,7 +5,8 @@ enum EnemyStates {
 	idle,
 	wander,
 	alert,
-	attack
+	attack,
+	hit
 }
 
 eState = EnemyStates.idle;
@@ -18,5 +19,6 @@ moveX = lengthdir_x(spd, my_dir);
 moveY = lengthdir_y(spd, my_dir);
 
 hp = 3;
+flash = false;
 
 image_xscale = 3;
