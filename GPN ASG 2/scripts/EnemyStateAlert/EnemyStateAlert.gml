@@ -18,7 +18,7 @@ function EnemyStateAlert(){
 		eState = EnemyState.IDLE;	
 	}
 	
-	if(collision_circle(x, y, 15, o_player, false, false))
+	if(collision_circle(x, y, 45, o_player, false, false))
 	{
 		eState = EnemyState.ATTACK;
 	}
