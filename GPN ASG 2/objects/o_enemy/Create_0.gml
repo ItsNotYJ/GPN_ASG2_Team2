@@ -17,6 +17,6 @@ my_dir = irandom_range(0,359);
 moveX = lengthdir_x(spd, my_dir);
 moveY = lengthdir_y(spd, my_dir);
 
-alive = true;
+hp = 3;
 
 image_xscale = 3;
