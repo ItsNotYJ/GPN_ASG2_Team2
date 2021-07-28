@@ -29,6 +29,7 @@ function PlayerStateAttackLight(){
 				with (hitID)
 				{
 					o_enemy.sprite_index = s_enemy_corpse;
+					o_enemy.alive = false;
 				}
 			}
 		}
