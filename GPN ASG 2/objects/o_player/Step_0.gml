@@ -14,9 +14,4 @@ if(alive)
 		break;
 }
 }
-else
-{
-	
-		
-}
 

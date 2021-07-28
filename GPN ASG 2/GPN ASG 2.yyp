@@ -1,12 +1,15 @@
 {
   "resources": [
+    {"id":{"name":"PlayerCollision","path":"scripts/PlayerCollision/PlayerCollision.yy",},"order":8,},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},"order":0,},
     {"id":{"name":"s_enemy_attack","path":"sprites/s_enemy_attack/s_enemy_attack.yy",},"order":9,},
+    {"id":{"name":"s_wall","path":"sprites/s_wall/s_wall.yy",},"order":12,},
     {"id":{"name":"EnemyStateWander","path":"scripts/EnemyStateWander/EnemyStateWander.yy",},"order":3,},
     {"id":{"name":"s_player_corpse","path":"sprites/s_player_corpse/s_player_corpse.yy",},"order":11,},
     {"id":{"name":"AnimationEnd","path":"scripts/AnimationEnd/AnimationEnd.yy",},"order":7,},
     {"id":{"name":"EnemyStateAlert","path":"scripts/EnemyStateAlert/EnemyStateAlert.yy",},"order":4,},
     {"id":{"name":"s_enemy_idle","path":"sprites/s_enemy_idle/s_enemy_idle.yy",},"order":5,},
+    {"id":{"name":"t_wall","path":"tilesets/t_wall/t_wall.yy",},"order":0,},
     {"id":{"name":"s_enemy_corpse","path":"sprites/s_enemy_corpse/s_enemy_corpse.yy",},"order":7,},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":1,},
     {"id":{"name":"s_player_dead","path":"sprites/s_player_dead/s_player_dead.yy",},"order":2,},

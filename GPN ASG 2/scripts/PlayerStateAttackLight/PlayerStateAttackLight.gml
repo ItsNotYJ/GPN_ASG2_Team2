@@ -28,10 +28,10 @@ function PlayerStateAttackLight(){
 				ds_list_add(hitByAttack, hitID);
 				with (hitID)
 				{
-					EnemyHit(1);
+				
 					
-					if (e_hp <= 0)
-						sprite_index = s_enemy_dead;
+					if(e_hp > 0)
+						EnemyHit(1);
 				}
 			}
 		}

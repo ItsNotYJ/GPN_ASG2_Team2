@@ -34,6 +34,6 @@ function EnemyStateAlert(){
 	}
 	else
 	{
-		eState = EnemyState.IDLE;	
+		eState = EnemyState.WANDER;	
 	}
 }

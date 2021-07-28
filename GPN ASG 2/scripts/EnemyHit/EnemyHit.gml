@@ -2,6 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyHit(damage){
 	e_hp -= damage;
+	
+	if(e_hp > 0)
+	{
+	
 	dir = point_direction(o_player.x, o_player.y, x, y)
 	dis = 75;
 	
@@ -9,4 +13,10 @@ function EnemyHit(damage){
 	y += lengthdir_y(dis, dir);
 	
 	sprite_index = s_enemy_hit;
+	}
+	else
+	{
+		sprite_index = s_enemy_dead;	
+	}
+	
 }
