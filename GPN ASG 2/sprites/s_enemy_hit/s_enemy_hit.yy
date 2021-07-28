@@ -53,7 +53,7 @@
     "spriteId": {"name":"s_enemy_hit","path":"sprites/s_enemy_hit/s_enemy_hit.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 18.0,
+    "playbackSpeed": 12.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

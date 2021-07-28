@@ -1,24 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-enum EnemyStates {
-	idle,
-	wander,
-	alert,
-	attack,
-	hit
+enum EnemyState {
+	IDLE,
+	WANDER,
+	ALERT,
+	ATTACK,
+	HIT,
+	DIE,
+	WAIT
 }
 
-eState = EnemyStates.idle;
+eState = EnemyState.IDLE;
 
 counter = 0;
-spd = 0.5;
+e_spd = 0.5;
 
 my_dir = irandom_range(0,359);
-moveX = lengthdir_x(spd, my_dir);
-moveY = lengthdir_y(spd, my_dir);
+moveX = lengthdir_x(e_spd, my_dir);
+moveY = lengthdir_y(e_spd, my_dir);
 
-hp = 3;
-flash = false;
+e_hp = 3;
 
-image_xscale = 3;
+pHitByAttack = ds_list_create();

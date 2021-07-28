@@ -22,7 +22,7 @@ function PlayerStateAttackLight(){
 			// If this instance has not yet been hit by this attack
 			var hitID = hitByAttackNow[| i]; // ds_list_find_value(hitByAttackNow, i)
 			
-			// Hit doesn't exist
+			// If Hit doesn't exist
 			if (ds_list_find_index(hitByAttack, hitID) == -1)
 			{
 				ds_list_add(hitByAttack, hitID);
@@ -30,7 +30,7 @@ function PlayerStateAttackLight(){
 				{
 					EnemyHit(1);
 					
-					if(hp <= 0)
+					if (e_hp <= 0)
 						sprite_index = s_enemy_dead;
 				}
 			}
@@ -43,7 +43,6 @@ function PlayerStateAttackLight(){
 	if (AnimationEnd())
 	{
 		sprite_index = s_player_idle;
-		
 		state = PLAYERSTATE.FREE;
 		mv_spd = 5;
 	}
