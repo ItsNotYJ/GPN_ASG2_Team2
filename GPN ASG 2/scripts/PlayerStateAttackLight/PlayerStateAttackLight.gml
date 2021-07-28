@@ -28,8 +28,8 @@ function PlayerStateAttackLight(){
 				ds_list_add(hitByAttack, hitID);
 				with (hitID)
 				{
-					o_enemy.sprite_index = s_enemy_corpse;
-					o_enemy.alive = false;
+					sprite_index = s_enemy_corpse;
+					alive = false;
 				}
 			}
 		}
