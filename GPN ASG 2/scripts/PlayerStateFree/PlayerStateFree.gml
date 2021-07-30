@@ -15,11 +15,10 @@ function PlayerStateFree(){
 	vSpeed = lengthdir_y(inputMagnitude * mv_spd, inputDirection);
 	
 	PlayerCollision();
-	
-	
+
 	if(keyRight > 0)
 	{
-		image_xscale = 2;	
+		image_xscale = 1;	
 	}
 	
 	var _oldSprite = sprite_index;
@@ -28,23 +27,14 @@ function PlayerStateFree(){
 		direction = inputDirection
 		sprite_index = s_player;
 		if(keyboard_check(ord("D")))
-		{
-			image_xscale = 2;	
-		}
+			image_xscale = 1;	
 		else if(keyboard_check(ord("A")))
-		{
-			image_xscale = -2;	
-		}
+			image_xscale = -1;	
 	}
 	else
 	{
 		sprite_index = s_player_idle;	
 	}
-	
-	
-	
-	
-	
 	
 	/*
 	if (keyboard_check(ord("A")) && place_free(x - collisionSpeed, y)) {

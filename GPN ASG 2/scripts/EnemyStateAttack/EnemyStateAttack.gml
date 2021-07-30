@@ -42,6 +42,6 @@ function EnemyStateAttack(){
 	{
 		sprite_index = s_enemy_idle;
 		eState = EnemyState.ALERT;
-		e_spd = 0.5;
+		e_spd = 0.8;
 	}
 }

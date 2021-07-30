@@ -15,7 +15,7 @@ enum EnemyState {
 eState = EnemyState.IDLE;
 
 counter = 0;
-e_spd = 0.5;
+e_spd = 0.8;
 
 my_dir = irandom_range(0,359);
 moveX = lengthdir_x(e_spd, my_dir);

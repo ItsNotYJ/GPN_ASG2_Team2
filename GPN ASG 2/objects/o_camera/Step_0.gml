@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 // Rate of the camera movement
-x += (xTo - x) / 25;
-y += (yTo - y) / 25;
+x += (xTo - x) / 20;
+y += (yTo - y) / 20;
 
 // Checks if follow is set to an instance of an object
 if (follow != noone)

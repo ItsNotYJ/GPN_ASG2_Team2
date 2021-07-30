@@ -24,11 +24,7 @@ function EnemyStateWander(){
 	}
 	
 	if(sign(moveX) > 0)
-	{
-		image_xscale = 3;
-	}
+		image_xscale = 1;
 	else
-	{
-		image_xscale = -3;	
-	}
+		image_xscale = -1;
 }

@@ -6,7 +6,7 @@ camera = camera_create();
 
 // Sets up camera position
 var viewMatrix = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
-var projectionMatrix = matrix_build_projection_ortho(640, 480, 1, 10000);
+var projectionMatrix = matrix_build_projection_ortho(400, 400, 1, 10000);
 
 // Set up camera
 camera_set_view_mat(camera, viewMatrix);

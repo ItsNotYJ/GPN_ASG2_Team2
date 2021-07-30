@@ -5,13 +5,13 @@ keyAttack = keyboard_check_pressed(ord("H")) || mouse_check_button_pressed(mb_le
 if(alive)
 {
 	switch (state) 
-{
-	case PLAYERSTATE.FREE: 
-		PlayerStateFree();
-		break;
-	case PLAYERSTATE.ATTACK_LIGHT:
-		PlayerStateAttackLight();
-		break;
-}
+	{
+		case PLAYERSTATE.FREE: 
+			PlayerStateFree();
+			break;
+		case PLAYERSTATE.ATTACK_LIGHT:
+			PlayerStateAttackLight();
+			break;
+	}
 }
 
