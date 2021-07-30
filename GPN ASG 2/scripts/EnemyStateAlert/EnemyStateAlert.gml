@@ -12,12 +12,12 @@ function EnemyStateAlert(){
 		x += moveX;
 		y += moveY;
 	
-		if(!collision_circle(x, y, 200, o_player, false, false))
+		if(!collision_circle(x, y, 100, o_player, false, false))
 		{
 			eState = EnemyState.IDLE;	
 		}
 	
-		if(collision_circle(x, y, 45, o_player, false, false))
+		if(collision_circle(x, y, 27, o_player, false, false))
 			eState = EnemyState.ATTACK;
 		
 		if(sign(moveX) > 0)
