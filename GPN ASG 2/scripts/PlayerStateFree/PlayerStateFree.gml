@@ -36,30 +36,6 @@ function PlayerStateFree(){
 		sprite_index = s_player_idle;	
 	}
 	
-	/*
-	if (keyboard_check(ord("A")) && place_free(x - collisionSpeed, y)) {
-		x -= mv_spd;
-		image_xscale = -2;
-		sprite_index = s_player;
-	}
-
-	if (keyboard_check(ord("D")) && place_free(x + collisionSpeed, y)) {
-		x += mv_spd;
-		image_xscale = 2;
-		sprite_index = s_player;
-	}
-
-	if (keyboard_check(ord("W"))  && place_free(x, y - collisionSpeed)) {
-		y -= mv_spd;	
-		sprite_index = s_player;
-	}
-
-	if (keyboard_check(ord("S"))  && place_free(x, y + collisionSpeed)) {
-		y += mv_spd;
-		sprite_index = s_player;
-	}
-	*/
-	
 	if (keyAttack)
 		state = PLAYERSTATE.ATTACK_LIGHT;
 }

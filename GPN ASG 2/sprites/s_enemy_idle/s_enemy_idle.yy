@@ -133,8 +133,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Skeleton",
+    "path": "folders/Sprites/Skeleton.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_enemy_idle",

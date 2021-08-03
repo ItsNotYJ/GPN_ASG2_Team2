@@ -6,6 +6,8 @@ function PlayerStateAttackLight(){
 	// Start of the attack
 	if (sprite_index != s_player_attack)
 	{
+		p_stamina -= 10
+		
 		sprite_index = s_player_attack;
 		image_index = 0;
 		ds_list_clear(hitByAttack);
@@ -27,9 +29,7 @@ function PlayerStateAttackLight(){
 			{
 				ds_list_add(hitByAttack, hitID);
 				with (hitID)
-				{
-				
-					
+				{	
 					if(e_hp > 0)
 						EnemyHit(1);
 				}
@@ -44,6 +44,6 @@ function PlayerStateAttackLight(){
 	{
 		sprite_index = s_player_idle;
 		state = PLAYERSTATE.FREE;
-		mv_spd = 5;
+		mv_spd = 2.5;
 	}
 }
