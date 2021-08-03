@@ -12,11 +12,11 @@ function EnemyHit(damage){
 	x += lengthdir_x(dis, dir);
 	y += lengthdir_y(dis, dir);
 	
-	sprite_index = s_enemy_hit;
+	// Maybe add hit effects or sound effect in the future here
+	
 	}
 	else
 	{
-		sprite_index = s_enemy_dead;	
+		sprite_index = s_enemy_dead;
 	}
-	
 }

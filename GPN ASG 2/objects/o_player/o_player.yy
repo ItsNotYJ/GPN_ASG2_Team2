@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "s_player_idle",
-    "path": "sprites/s_player_idle/s_player_idle.yy",
+    "name": "s_player_idle_left",
+    "path": "sprites/s_player_idle_left/s_player_idle_left.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "s_player_idle",
-    "path": "sprites/s_player_idle/s_player_idle.yy",
+    "name": "s_player_idle_left",
+    "path": "sprites/s_player_idle_left/s_player_idle_left.yy",
   },
   "persistent": false,
   "parentObjectId": null,

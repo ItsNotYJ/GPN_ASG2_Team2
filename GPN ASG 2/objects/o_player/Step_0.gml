@@ -1,10 +1,9 @@
 /// @description Movement Code
 // You can write your code in this editor
-keyAttack = keyboard_check_pressed(ord("H")) || mouse_check_button_pressed(mb_left);
+keyAttack = mouse_check_button_pressed(mb_left);
 
 if (p_hp <= 0)
 	alive = false;
-
 
 if(alive)
 {

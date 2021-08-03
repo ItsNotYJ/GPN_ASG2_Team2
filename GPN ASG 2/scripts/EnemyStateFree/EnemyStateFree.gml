@@ -17,6 +17,4 @@ function EnemyStateFree(){
 	{
 		eState = EnemyState.ALERT;	
 	}
-	
-	//sprite_index = enemy wander sprite
 }

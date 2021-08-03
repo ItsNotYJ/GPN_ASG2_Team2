@@ -5,6 +5,7 @@ function EnemyStateWander(){
 	x += moveX;
 	y += moveY;
 	
+	sprite_index = s_enemy_idle_wonder;
 	if(counter >= room_speed * 2)
 	{
 		var change = choose(0, 1);

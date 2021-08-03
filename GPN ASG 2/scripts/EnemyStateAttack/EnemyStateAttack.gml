@@ -29,7 +29,6 @@ function EnemyStateAttack(){
 				with (hitID)
 				{
 					p_hp -= 5;
-					sprite_index = s_player_dead;
 				}
 			}
 		}

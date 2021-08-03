@@ -4,19 +4,33 @@ function PlayerStateAttackLight(){
 	mv_spd = 0;
 	
 	// Start of the attack
-	if (sprite_index != s_player_attack)
+	if (sprite_index != s_player_attack_left && sprite_index != s_player_attack_up && sprite_index != s_player_attack_down)
 	{
 		p_stamina -= 10
 		
-		sprite_index = s_player_attack;
+		if (sprite_index == s_player_walk_left || sprite_index == s_player_idle_left)
+		{
+			mask_index = s_player_attack_leftHB;
+			sprite_index = s_player_attack_left;
+		}
+		else if (sprite_index == s_player_walk_up || sprite_index == s_player_idle_up)
+		{
+			mask_index = s_player_attack_upHB;
+			sprite_index = s_player_attack_up;
+		}
+		else if (sprite_index == s_player_walk_down || sprite_index == s_player_idle_down)
+		{
+			mask_index = s_player_attack_downHB;
+			sprite_index = s_player_attack_down;
+		}
+		
 		image_index = 0;
 		ds_list_clear(hitByAttack);
 	}
 	
 	// Use Attack hitbox & check for hits
-	mask_index = s_player_attackHB;
 	var hitByAttackNow = ds_list_create();
-	var hits = instance_place_list(x,y, o_enemy, hitByAttackNow, false);
+	var hits = instance_place_list(x,y, o_reaper, hitByAttackNow, false);
 	if (hits > 0)
 	{
 		for (var i = 0; i < hits; i++)
@@ -38,11 +52,19 @@ function PlayerStateAttackLight(){
 	}
 	
 	ds_list_destroy(hitByAttackNow);
-	mask_index = s_player_idle;
+	mask_index = s_player_idle_left;
 	
 	if (AnimationEnd())
 	{
-		sprite_index = s_player_idle;
+		if (sprite_index == s_player_attack_left)
+			sprite_index = s_player_idle_left;
+	
+		if (sprite_index == s_player_attack_up)
+			sprite_index = s_player_idle_up;
+	
+		if (sprite_index == s_player_attack_down)
+			sprite_index = s_player_idle_down;
+		
 		state = PLAYERSTATE.FREE;
 		mv_spd = 2.5;
 	}
