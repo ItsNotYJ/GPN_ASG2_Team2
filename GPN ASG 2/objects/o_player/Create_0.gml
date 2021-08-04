@@ -34,6 +34,7 @@ staminabar_y = 37;
 // Player State
 alive = true;
 state = PLAYERSTATE.FREE;
+lastState = state;
 hitByAttack = ds_list_create();
 
 enum PLAYERSTATE 
@@ -41,3 +42,6 @@ enum PLAYERSTATE
 	FREE,
 	ATTACK_LIGHT
 }
+
+surface_resize(application_surface, 1920, 1080);
+
