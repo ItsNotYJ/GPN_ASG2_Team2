@@ -10,7 +10,7 @@ counter = 0;
 mv_spd = 2.5;
 
 // HUD
-p_hp = 100;
+p_hp = 20;
 php_max = p_hp;
 
 p_stamina = 100;

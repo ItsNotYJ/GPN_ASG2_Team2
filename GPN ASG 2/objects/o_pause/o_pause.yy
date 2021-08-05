@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Screens",
+    "path": "folders/Objects/Screens.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_pause",

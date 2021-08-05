@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "s_menu_bg",
-    "path": "sprites/s_menu_bg/s_menu_bg.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -32,7 +29,7 @@
     "path": "folders/Objects/Screens.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_title_menu",
+  "name": "o_credits",
   "tags": [],
   "resourceType": "GMObject",
 }

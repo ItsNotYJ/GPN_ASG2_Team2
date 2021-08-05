@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "AlwaysOn",
+    "path": "folders/Objects/AlwaysOn.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_hud",
