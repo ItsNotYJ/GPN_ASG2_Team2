@@ -1,15 +1,12 @@
 {
   "spriteId": {
-    "name": "s_player_idle_left",
-    "path": "sprites/s_player_idle_left/s_player_idle_left.yy",
+    "name": "s_menu_bg",
+    "path": "sprites/s_menu_bg/s_menu_bg.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "s_player_idle_left",
-    "path": "sprites/s_player_idle_left/s_player_idle_left.yy",
-  },
-  "persistent": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -26,8 +23,7 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,7 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_player",
+  "name": "o_title_menu",
   "tags": [],
   "resourceType": "GMObject",
 }

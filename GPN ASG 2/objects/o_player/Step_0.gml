@@ -21,4 +21,9 @@ if(alive)
 	
 	if(counter >= room_speed * 2 && p_stamina <= pstamina_max)
 		p_stamina += 0.1;
+		
+	if(p_stamina < 0)
+		p_stamina = 0;
+	else if (p_stamina > pstamina_max)
+		p_stamina = pstamina_max;
 }

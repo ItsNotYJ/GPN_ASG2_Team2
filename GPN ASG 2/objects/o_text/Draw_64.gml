@@ -3,7 +3,7 @@
 
 funcNineSliceBoxStretched(s_textbox, x1,y1,x2,y2, 0);
 
-draw_set_font(f_text)
+draw_set_font(MatchUpPro)
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 draw_set_color(c_black);

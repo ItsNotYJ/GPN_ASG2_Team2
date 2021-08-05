@@ -6,7 +6,12 @@ x += (xTo - x) / 20;
 y += (yTo - y) / 20;
 
 // Checks if follow is set to an instance of an object
-if (follow != noone)
+if (global.paused)
+{
+	xTo = x;
+	yTo = y;
+}
+else if (follow != noone)
 {
 	xTo = follow.x;
 	yTo = follow.y;
