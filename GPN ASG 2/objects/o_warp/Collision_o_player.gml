@@ -8,6 +8,6 @@ other.x = xPosition;
 other.y = xPosition;
 room_goto(Stage1);
 */
-NewTextBox("Enter Dungeon?");
+NewTextBox("\nEnter Dungeon?", 0, ["Yes","No"]);
 
 o_player.y += 5

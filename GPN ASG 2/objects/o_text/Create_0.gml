@@ -2,13 +2,13 @@
 // You can write your code in this editor
 
 x1 = 1920/2;
-y1 = 1080-300;
+y1 = 1080-350;
 x2 = 1920/2;
-y2 = 1080;
+y2 = 980;
 
 
-x1Target = 100;
-x2Target = 1820;
+x1Target = 200;
+x2Target = 1720;
 
 lerpProgress = 0;
 

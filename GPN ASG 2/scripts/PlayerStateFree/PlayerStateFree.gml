@@ -19,7 +19,6 @@ function PlayerStateFree(){
 		image_xscale = -1;	
 	}
 	
-	var _oldSprite = sprite_index;
 	if(inputMagnitude != 0)
 	{
 		direction = inputDirection
@@ -52,4 +51,6 @@ function PlayerStateFree(){
 	
 	if (keyAttack)
 		state = PLAYERSTATE.ATTACK_LIGHT;
+		
+		
 }

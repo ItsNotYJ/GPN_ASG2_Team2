@@ -126,8 +126,8 @@
     {"instances":[
         {"properties":[
             {"propertyId":{"name":"roomName","path":"objects/o_warp/o_warp.yy",},"objectId":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"value":"Stage1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"yPosition","path":"objects/o_warp/o_warp.yy",},"objectId":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"value":"510","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"xPosition","path":"objects/o_warp/o_warp.yy",},"objectId":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"value":"570","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"yPosition","path":"objects/o_warp/o_warp.yy",},"objectId":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"value":"672","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"xPosition","path":"objects/o_warp/o_warp.yy",},"objectId":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"value":"576","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":96.0,"resourceVersion":"1.0","name":"inst_400486AB","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Warp","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"t_dungeon","path":"tilesets/t_dungeon/t_dungeon.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":80,"SerialiseHeight":48,"TileSerialiseData":[
