@@ -4,6 +4,8 @@ keyAttack = mouse_check_button_pressed(mb_left);
 
 if (p_hp <= 0)
 	alive = false;
+else if (p_hp > php_max)
+	p_hp = php_max;
 
 if(alive)
 {

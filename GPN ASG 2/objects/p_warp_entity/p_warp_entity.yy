@@ -29,8 +29,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Doors",
+    "path": "folders/Objects/Doors.yy",
   },
   "resourceVersion": "1.0",
   "name": "p_warp_entity",

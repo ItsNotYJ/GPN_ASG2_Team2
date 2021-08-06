@@ -10,10 +10,10 @@ counter = 0;
 mv_spd = 2.5;
 
 // HUD
-p_hp = 20;
+p_hp = 50;
 php_max = p_hp;
 
-p_stamina = 100;
+p_stamina = 60;
 pstamina_max = p_stamina;
 
 // Player State
