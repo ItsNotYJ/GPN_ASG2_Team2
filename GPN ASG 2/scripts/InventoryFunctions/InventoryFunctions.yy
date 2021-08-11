@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Text",
-    "path": "folders/Scripts/Text.yy",
+    "name": "Inventory",
+    "path": "folders/Scripts/Inventory.yy",
   },
   "resourceVersion": "1.0",
-  "name": "DialogueResponses",
+  "name": "InventoryFunctions",
   "tags": [],
   "resourceType": "GMScript",
 }

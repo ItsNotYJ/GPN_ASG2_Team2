@@ -1,5 +1,5 @@
 // If player walks to pick up potion
-o_player.p_hp += 10;
+InventoryAdd(o_hud.id, image_index);
 
 // Destroy the item so once picked up
 instance_destroy();

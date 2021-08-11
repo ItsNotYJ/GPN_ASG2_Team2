@@ -8,11 +8,11 @@ draw_sprite(s_statbar, 0, statbar_x, statbar_y);
 
 // Draw Key
 draw_sprite(s_hud_key, 0, key_x, key_y);
-draw_text_transformed(gold_x + 25, key_y, string(global.keys), 1.5, 1.5, 0);
+draw_text_transformed(gold_x + 40, key_y, string(global.keys), 1.5, 1.5, 0);
 
 // Draw Gold
 draw_sprite(s_hud_gold, 0, gold_x, gold_y);
-draw_text_transformed(gold_x + 25, gold_y, string(global.gold), 1.5, 1.5, 0);
+draw_text_transformed(gold_x + 40, gold_y, string(global.gold), 1.5, 1.5, 0);
 
 if (isOpen)
 {
@@ -38,4 +38,15 @@ if (isOpen)
 		if (inventory[i] != -1)
 			draw_sprite(s_items, inventory[i], xx + 6, yy + 6);
 	}
+}
+
+if (global.alive == false)
+{
+	draw_set_font(MatchUpPro);
+
+	// Draw background
+	draw_sprite_ext(s_bg_black, 0, 0, 0, 1, 1, 0, c_white, 1);
+	
+	// Draw text
+	draw_text_transformed(d_textx, d_texty, "Game Over! Press R to restart", 2, 2, 0);
 }

@@ -37,5 +37,6 @@ inventory = array_create(INVENTORY_SLOTS, -1);
 
 randomize();
 
-inventory[0] = 0;
-inventory[1] = 0;
+// Text
+d_textx = display_get_gui_width() / 2;
+d_texty = display_get_gui_height() / 2;

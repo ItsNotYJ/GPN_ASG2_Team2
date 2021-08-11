@@ -17,6 +17,7 @@ function EnemyHit(damage){
 	}
 	else
 	{
+		global.gold += 10;
 		sprite_index = s_enemy_dead;
 	}
 }

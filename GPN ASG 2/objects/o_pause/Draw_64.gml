@@ -1,4 +1,4 @@
-if (global.paused)
+if (global.paused && global.alive)
 {
 	draw_set_font(MatchUpPro);
 

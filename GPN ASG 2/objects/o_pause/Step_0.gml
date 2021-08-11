@@ -4,14 +4,14 @@ if (keyboard_check_pressed(vk_escape))
 	
 	if (global.paused)
 	{
-		instance_deactivate_layer("Player");
-		instance_deactivate_layer("Enemies");
 		instance_deactivate_object(o_hud);
+		instance_deactivate_object(o_player);
+		instance_deactivate_object(o_reaper);
 	}
 	else
 	{
-		instance_activate_layer("Player");
-		instance_activate_layer("Enemies");
+		instance_activate_object(o_player);
+		instance_activate_object(o_reaper);
 		instance_activate_object(o_hud);
 	}
 }

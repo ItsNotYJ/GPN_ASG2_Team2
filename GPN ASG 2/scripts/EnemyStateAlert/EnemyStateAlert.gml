@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyStateAlert(){
 	sprite_index = s_enemy_idle_wonder;
-	if(o_player.alive)
+	if(global.alive)
 	{
 		my_dir = point_direction(x, y, o_player.x, o_player.y);
 	

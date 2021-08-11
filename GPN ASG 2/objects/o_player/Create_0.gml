@@ -17,7 +17,7 @@ p_stamina = 60;
 pstamina_max = p_stamina;
 
 // Player State
-alive = true;
+global.alive = true;
 state = PLAYERSTATE.FREE;
 lastState = state;
 hitByAttack = ds_list_create();
