@@ -43,9 +43,9 @@ function PlayerStateAttackLight(){
 			{
 				ds_list_add(hitByAttack, hitID);
 				with (hitID)
-				{	
+				{
 					if(e_hp > 0)
-						EnemyHit(1);
+						EnemyHit(global.playerStrength);
 				}
 			}
 		}

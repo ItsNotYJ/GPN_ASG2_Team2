@@ -37,6 +37,9 @@ if (isOpen)
 		// Draw item in slots
 		if (inventory[i] != -1)
 			draw_sprite(s_items, inventory[i], xx + 6, yy + 6);
+			
+		if (selectedItem == i)
+			draw_sprite(s_slotSelected, 0, xx, yy);
 	}
 }
 

@@ -1,28 +1,17 @@
-function InventorySearch(rootObject, itemType)
+function InventoryUse(invIndex)
 {
-	for (var i = 0; i < INVENTORY_SLOTS; i++)
+	// Retrieve item position
+	var item = o_hud.inventory[invIndex];
+	
+	// Check if its an empty slot
+	if (item != -1)
 	{
-		if (rootObject.inventory[i] == itemType)
-		{
-			show_debug_message("yes");
-			return (i);
-		}
+		// Use items script
+		UseItems(item);
+		
+		// Once done set it to empty
+		o_hud.inventory[invIndex] = -1;
 	}
-	show_debug_message("no");
-	return (-1);
-}
-
-function InventoryRemove(rootObject, itemType)
-{
-	var slot = InventorySearch(rootObject, itemType);
-	if (slot != -1)
-	{
-		with (rootObject)
-			inventory[slot] = -1;
-		return true;
-	}
-	else
-		return false;
 }
 
 function InventoryAdd(itemType)

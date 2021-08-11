@@ -35,7 +35,7 @@ rowLen = 3;
 
 inventory = array_create(INVENTORY_SLOTS, -1);
 
-randomize();
+selectedItem = 0;
 
 // Text
 d_textx = display_get_gui_width() / 2;
