@@ -1,7 +1,5 @@
-// Array to store image index of the sprite to switch between different potions
-potion[0] = 2; // Health
-potion[1] = 0;
-// potion[1] = 1; // SP (TBC)
+// Randomize the image_index / item
+image_index = irandom(sprite_get_number(s_items) - 1);
 
 // To make them hover
 timer = 0;

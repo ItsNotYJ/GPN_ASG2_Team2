@@ -25,15 +25,15 @@ function InventoryRemove(rootObject, itemType)
 		return false;
 }
 
-function InventoryAdd(rootObject, itemType)
+function InventoryAdd(itemType)
 {
-	var slot = InventorySearch(rootObject, itemType);
-	if (slot != -1)
+	for (var i = 0; i < INVENTORY_SLOTS; i++)
 	{
-		with (rootObject)
-			inventory[slot] = itemType;
-		return true;
+		// Check for empty slots
+		if (o_hud.inventory[i] == -1)
+		{
+			o_hud.inventory[i] = itemType;
+			break;
+		}
 	}
-	else
-		return false;
 }
