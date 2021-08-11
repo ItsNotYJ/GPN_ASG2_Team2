@@ -16,6 +16,7 @@ function EnemyStateAlert(){
 		if(!collision_circle(x, y, 100, o_player, false, false))
 		{
 			eState = EnemyState.IDLE;	
+			e_spd = 0.3;
 		}
 	
 		if(collision_circle(x, y, 20, o_player, false, false))
@@ -28,4 +29,5 @@ function EnemyStateAlert(){
 	}
 	else
 		eState = EnemyState.WANDER;	
+		e_spd = 0.3;
 }

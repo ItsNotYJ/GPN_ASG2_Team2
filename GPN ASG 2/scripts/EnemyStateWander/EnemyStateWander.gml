@@ -19,7 +19,7 @@ function EnemyStateWander(){
 		}
 	}
 	
-	if(collision_circle(x, y, 200, o_player, false, false))
+	if(collision_circle(x, y, 100, o_player, false, false))
 	{
 		eState = EnemyState.ALERT;	
 	}
