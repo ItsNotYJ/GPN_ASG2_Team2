@@ -7,10 +7,31 @@ function EnemyHit(damage){
 	{
 	
 	dir = point_direction(o_player.x, o_player.y, x, y)
-	dis = 75;
+	dis = 25;
 	
-	x += lengthdir_x(dis, dir);
-	y += lengthdir_y(dis, dir);
+	moveX = lengthdir_x(dis, dir);
+	moveY = lengthdir_y(dis, dir);
+	
+	if(tilemap_get_at_pixel(tilemap, x + moveX, y))
+	{
+			x -= x mod 16;
+			if(sign(moveX) == 1) x += 16 - 1;	
+			moveX = 0;
+			
+			}
+	
+	
+	x += moveX;
+	if(tilemap_get_at_pixel(tilemap, x, y + moveY))
+	{
+			y -= y mod 16;
+			if(sign(moveY) == 1) y += 16 - 1;	
+			moveY = 0;
+	}
+	
+	
+	y += moveY;
+	
 	
 	// Maybe add hit effects or sound effect in the future here
 	

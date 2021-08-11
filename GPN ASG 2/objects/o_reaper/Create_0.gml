@@ -12,6 +12,8 @@ enum EnemyState {
 }
 
 eState = EnemyState.IDLE;
+tilemap = layer_tilemap_get_id("Wall")
+
 
 counter = 0;
 e_spd = 0.8;

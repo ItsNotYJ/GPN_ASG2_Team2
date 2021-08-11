@@ -2,8 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyStateWander(){
 	counter += 1;
-	x += moveX;
-	y += moveY;
+	e_spd = 0.3;
 	
 	sprite_index = s_enemy_idle_wonder;
 	if(counter >= room_speed * 2)
@@ -18,6 +17,28 @@ function EnemyStateWander(){
 				counter = 0;
 		}
 	}
+	
+	
+	if(tilemap_get_at_pixel(tilemap, x + moveX, y))
+	{
+			x -= x mod 16;
+			if(sign(moveX) == 1) x += 16 - 1;	
+			moveX = 0;
+			
+			}
+	
+	
+	x += moveX;
+	if(tilemap_get_at_pixel(tilemap, x, y + moveY))
+	{
+			y -= y mod 16;
+			if(sign(moveY) == 1) y += 16 - 1;	
+			moveY = 0;
+	}
+	
+	
+	y += moveY;
+	
 	
 	if(collision_circle(x, y, 100, o_player, false, false))
 	{

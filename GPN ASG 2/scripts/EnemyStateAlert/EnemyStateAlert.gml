@@ -10,8 +10,25 @@ function EnemyStateAlert(){
 		moveX = lengthdir_x(e_spd, my_dir);
 		moveY = lengthdir_y(e_spd, my_dir);
 	
-		x += moveX;
-		y += moveY;
+		if(tilemap_get_at_pixel(tilemap, x + moveX, y))
+	{
+			x -= x mod 16;
+			if(sign(moveX) == 1) x += 16 - 1;	
+			moveX = 0;
+			
+			}
+	
+	
+	x += moveX;
+	if(tilemap_get_at_pixel(tilemap, x, y + moveY))
+	{
+			y -= y mod 16;
+			if(sign(moveY) == 1) y += 16 - 1;	
+			moveY = 0;
+	}
+	
+	
+	y += moveY;
 	
 		if(!collision_circle(x, y, 100, o_player, false, false))
 		{
@@ -22,7 +39,7 @@ function EnemyStateAlert(){
 		if(collision_circle(x, y, 20, o_player, false, false))
 			eState = EnemyState.ATTACK;
 		
-		if(sign(moveX) > 0)
+		if(sign(lengthdir_x(e_spd, my_dir)) > 0)
 			image_xscale = 1;
 		else
 			image_xscale = -1;
