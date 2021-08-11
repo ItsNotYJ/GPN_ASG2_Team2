@@ -68,6 +68,7 @@
     {"id":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"order":0,},
     {"id":{"name":"s_player_idle_left","path":"sprites/s_player_idle_left/s_player_idle_left.yy",},"order":1,},
     {"id":{"name":"PlayerStateAttackLight","path":"scripts/PlayerStateAttackLight/PlayerStateAttackLight.yy",},"order":1,},
+    {"id":{"name":"o_key","path":"objects/o_key/o_key.yy",},"order":3,},
     {"id":{"name":"Hub","path":"rooms/Hub/Hub.yy",},"order":2,},
   ],
   "Options": [
