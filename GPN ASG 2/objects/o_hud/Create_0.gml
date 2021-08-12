@@ -1,4 +1,4 @@
-display_set_gui_size(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
+display_set_gui_size(700, 400);
 
 statbar_x = 10;
 statbar_y = 10;
