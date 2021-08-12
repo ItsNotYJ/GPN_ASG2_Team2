@@ -14,6 +14,9 @@ my_dir = irandom_range(0,359);
 moveX = lengthdir_x(db_spd, my_dir);
 moveY = lengthdir_y(db_spd, my_dir);
 
-dBoss_hp = 20;
+e_hp = 20;
+ehp_max = e_hp;
+
+global.demonBossDead = false;
 
 dbHitByAttack = ds_list_create();

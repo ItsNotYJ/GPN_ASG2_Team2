@@ -36,7 +36,7 @@ function EnemyStateAlert(){
 			e_spd = 0.3;
 		}
 	
-		if(collision_circle(x, y, 20, o_player, false, false))
+		if(collision_circle(x, y, 14, o_player, false, false))
 			eState = EnemyState.ATTACK;
 		
 		if(sign(lengthdir_x(e_spd, my_dir)) > 0)

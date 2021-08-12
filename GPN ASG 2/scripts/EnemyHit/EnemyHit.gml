@@ -14,31 +14,36 @@ function EnemyHit(damage){
 	
 	if(tilemap_get_at_pixel(tilemap, x + moveX, y))
 	{
-			x -= x mod 16;
-			if(sign(moveX) == 1) x += 16 - 1;	
+		x -= x mod 16;
+		if(sign(moveX) == 1) x += 16 - 1;	
 			moveX = 0;
-			
-			}
+	}
 	
 	
 	x += moveX;
 	if(tilemap_get_at_pixel(tilemap, x, y + moveY))
 	{
-			y -= y mod 16;
-			if(sign(moveY) == 1) y += 16 - 1;	
+		y -= y mod 16;
+		if(sign(moveY) == 1) y += 16 - 1;	
 			moveY = 0;
 	}
 	
-	
 	y += moveY;
 	
-	
 	// Maybe add hit effects or sound effect in the future here
-	
 	}
 	else
-	{
-		global.gold += 10;
-		sprite_index = s_enemy_dead;
+	{	
+		if (sprite_index == s_boss_idle || sprite_index == s_boss_attack)
+		{
+			global.gold += irandom_range(100, 300);
+			sprite_index = s_boss_death;
+		}
+		
+		if (sprite_index == s_enemy_attack || sprite_index == s_enemy_idle || sprite_index == s_enemy_idle_wonder)
+		{
+			global.gold += irandom_range(10, 20);
+			sprite_index = s_enemy_dead;
+		}
 	}
 }

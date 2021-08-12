@@ -1,4 +1,9 @@
-if (dBoss_hp > 0)
+if (e_hp <= 0)
+{
+	global.demonBossDead = true;
+}
+
+if (e_hp > 0 && global.demonBossDead == false)
 { 
 	switch (dbState)
 	{

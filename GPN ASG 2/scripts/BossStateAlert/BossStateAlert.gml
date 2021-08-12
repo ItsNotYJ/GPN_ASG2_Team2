@@ -28,7 +28,7 @@ function BossStateAlert(){
 
 		y += moveY;
 	
-		if(collision_circle(x, y, 80, o_player, false, false))
+		if(collision_circle(x, y, 40, o_player, false, false))
 			dbState = DemonBossState.ATTACK;
 		
 		if(sign(lengthdir_x(db_spd, my_dir)) > 0)

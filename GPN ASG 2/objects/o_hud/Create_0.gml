@@ -40,3 +40,16 @@ selectedItem = 0;
 // Text
 d_textx = display_get_gui_width() / 2;
 d_texty = display_get_gui_height() / 2;
+
+// Boss HP Bar
+dBoss_x = 485;
+dBoss_y = 20;
+
+dBoss_w = 200;
+dBoss_h = 15;
+
+dHPBoss_x = 490;
+dHPBoss_y = 24;
+
+dHPBoss_w = 189;
+dHPBoss_h = 7;

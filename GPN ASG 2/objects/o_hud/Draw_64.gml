@@ -45,11 +45,22 @@ if (isOpen)
 
 if (global.alive == false)
 {
-	draw_set_font(MatchUpPro);
-
 	// Draw background
 	draw_sprite_ext(s_bg_black, 0, 0, 0, 1, 1, 0, c_white, 1);
 	
 	// Draw text
 	draw_text_transformed(d_textx, d_texty, "Game Over! Press R to restart", 2, 2, 0);
+}
+
+// Draw Boss HP if player in demon boss room
+if (global.alive && room == BossRoom1)
+{
+	// Draw Boss Name
+	draw_text_transformed_color(dBoss_x + 5, 5, "Gale, The Underlord", 1, 1, 0, c_red, c_red, c_red, c_red, 1);
+	
+	// Draw HP Background
+	draw_sprite_stretched(s_boss_hpbg, 0, dBoss_x, dBoss_y, dBoss_w, dBoss_h);
+	
+	// Draw HP
+	draw_sprite_stretched(s_boss_hp, 0, dHPBoss_x, dHPBoss_y, (o_demon_boss.e_hp / o_demon_boss.ehp_max) * dHPBoss_w, dHPBoss_h);
 }

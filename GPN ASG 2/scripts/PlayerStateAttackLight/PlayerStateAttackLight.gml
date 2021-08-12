@@ -30,7 +30,7 @@ function PlayerStateAttackLight(){
 	
 	// Use Attack hitbox & check for hits
 	var hitByAttackNow = ds_list_create();
-	var hits = instance_place_list(x,y, o_reaper, hitByAttackNow, false);
+	var hits = instance_place_list(x,y, o_parent_enemy, hitByAttackNow, false);
 	if (hits > 0)
 	{
 		for (var i = 0; i < hits; i++)
@@ -43,7 +43,7 @@ function PlayerStateAttackLight(){
 			{
 				ds_list_add(hitByAttack, hitID);
 				with (hitID)
-				{
+				{		
 					if(e_hp > 0)
 						EnemyHit(global.playerStrength);
 				}
