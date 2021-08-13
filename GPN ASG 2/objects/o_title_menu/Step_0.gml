@@ -18,10 +18,10 @@ if accept_key
 			room_goto(Tutorial);
 			break;
 		
-		// Credits Screen	
+		// Credits Screen
 		case 1:
 			o_title_menu.visible = false;
-			instance_create_layer(o_title_menu.x, o_title_menu.y, "Instances", o_credits)
+			instance_create_layer(o_title_menu.x, o_title_menu.y, "Instances", o_credits);
 			break;
 		
 		// End Game
