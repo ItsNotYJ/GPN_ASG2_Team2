@@ -24,7 +24,12 @@ if(keyboard_check_pressed(vk_space))
 	{
 		if(responses[0] != -1)
 		{
-			DialogueResponses(responseSelected);
+			if(warp)
+			{
+				DialogueResponses(responseSelected);
+			}
+			
+			
 		}
 		
 		instance_destroy();	

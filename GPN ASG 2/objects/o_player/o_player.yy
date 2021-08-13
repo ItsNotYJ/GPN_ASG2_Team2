@@ -9,7 +9,7 @@
     "name": "s_player_idle_left",
     "path": "sprites/s_player_idle_left/s_player_idle_left.yy",
   },
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,

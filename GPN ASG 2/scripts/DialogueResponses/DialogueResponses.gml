@@ -4,11 +4,26 @@ function DialogueResponses(){
 
 
 	x = argument[0];
-	
 	if(x = 0)
 	{
-		with(o_warp) other.x = xPosition;
-		with(o_warp) other.y = xPosition;
-		with(o_warp) room_goto(Stage1);
+		if(global.inTutorial ==  true)
+		{
+			
+			with(o_warp_tutorial) room_goto(Hub);
+			global.inTutorial = false;
+		}
+		else
+		{
+			if(global.inBattle)
+			{
+				with(o_warp_boss) room_goto(BossRoom1);
+			}
+			else
+			{
+				global.inBattle = true;
+				with(o_warp) room_goto(Stage1);
+			}
+		}
 	}
+	
 }

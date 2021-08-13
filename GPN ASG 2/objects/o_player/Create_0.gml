@@ -19,6 +19,8 @@ pstamina_max = p_stamina;
 // Player State
 global.alive = true;
 global.playerStrength = 5;
+global.inBattle = false;
+global.inTutorial = false;
 
 state = PLAYERSTATE.FREE;
 lastState = state;

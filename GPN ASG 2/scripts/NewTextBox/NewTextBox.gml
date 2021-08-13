@@ -8,11 +8,17 @@ function NewTextBox(){
 	{
 		
 		message = argument[0];
-		warp = argument[1];
-		responses = argument[2];
-		responseSelected = 0
+		responses = argument[1];
+		responseSelected = 0;
+		
+		if(argument[2] == 1)
+		{
+			warp = true;
+		}
 		if(instance_exists(other)) originInstance = other.id else originInstance = noone;
-		if(argument_count > 1) background = argument[1]; else background = 1;
+		
+
+	
 		
 	}
 	

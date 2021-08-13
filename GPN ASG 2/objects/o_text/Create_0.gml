@@ -12,3 +12,5 @@ x2Target = display_get_gui_width() - 100;
 lerpProgress = 0;
 
 textProgress = 0;
+
+warp = false;
