@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite46",
-    "path": "sprites/Sprite46/Sprite46.yy",
+    "name": "s_boss_spell1",
+    "path": "sprites/s_boss_spell1/s_boss_spell1.yy",
   },
   "solid": false,
   "visible": true,

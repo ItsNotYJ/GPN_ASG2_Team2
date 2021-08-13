@@ -15,7 +15,7 @@ if accept_key
 	{
 		// Start Game
 		case 0:
-			room_goto_next();
+			room_goto(Tutorial);
 			break;
 		
 		// Credits Screen	
