@@ -4,6 +4,8 @@ function BossStateAlert(){
 	sprite_index = s_boss_idle;
 	if(global.alive)
 	{
+		counter += 1;
+		
 		my_dir = point_direction(x, y, o_player.x, o_player.y);
 
 		moveX = lengthdir_x(db_spd, my_dir);
@@ -27,8 +29,24 @@ function BossStateAlert(){
 		}
 
 		y += moveY;
-	
-		if(collision_circle(x, y, 40, o_player, false, false))
+		
+		if(collision_circle(x, y, 250, o_player, false, false) && counter >= room_speed * 1)
+		{
+			var ran = irandom_range(0,1);
+			if (ran == 0)
+			{
+				BossSpell(spellDir, spellSpd);
+				
+				if (spellDir == 0)
+					spellDir = 1;
+				else if (spellDir == 1)
+					spellDir = 0;
+				
+				counter = 0;
+			}
+		}
+		
+		if(collision_circle(x, y, 45, o_player, false, false))
 			dbState = DemonBossState.ATTACK;
 		
 		if(sign(lengthdir_x(db_spd, my_dir)) > 0)

@@ -18,15 +18,13 @@ function EnemyStateWander(){
 		}
 	}
 	
-	
 	if(tilemap_get_at_pixel(tilemap, x + moveX, y))
 	{
-			x -= x mod 16;
-			if(sign(moveX) == 1) x += 16 - 1;	
+		x -= x mod 16;
+		if(sign(moveX) == 1) x += 16 - 1;	
 			moveX = 0;
 			
-			}
-	
+	}
 	
 	x += moveX;
 	if(tilemap_get_at_pixel(tilemap, x, y + moveY))
@@ -36,9 +34,7 @@ function EnemyStateWander(){
 			moveY = 0;
 	}
 	
-	
 	y += moveY;
-	
 	
 	if(collision_circle(x, y, 100, o_player, false, false))
 	{

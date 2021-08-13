@@ -56,7 +56,7 @@ if (global.alive == false)
 if (global.alive && room == BossRoom1)
 {
 	// Draw Boss Name
-	draw_text_transformed_color(dBoss_x + 5, 5, "Gale, The Underlord", 1, 1, 0, c_red, c_red, c_red, c_red, 1);
+	draw_text_transformed_color(dBoss_x + 70, 5, "Gale, The Undead Tyrant", 1, 1, 0, c_red, c_red, c_red, c_red, 1);
 	
 	// Draw HP Background
 	draw_sprite_stretched(s_boss_hpbg, 0, dBoss_x, dBoss_y, dBoss_w, dBoss_h);

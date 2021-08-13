@@ -13,6 +13,7 @@ function BossStateAttack(){
 	
 	// Use Attack hitbox & check for hits
 	mask_index = s_boss_attackHB;
+	
 	var dbHitByAttackNow = ds_list_create();
 	var hits = instance_place_list(x, y, o_player, dbHitByAttackNow, false);
 	if (hits > 0)
