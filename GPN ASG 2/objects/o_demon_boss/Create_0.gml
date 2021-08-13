@@ -23,4 +23,3 @@ dbHitByAttack = ds_list_create();
 
 spellSpd = 1.5;
 spellDir = 1;
-

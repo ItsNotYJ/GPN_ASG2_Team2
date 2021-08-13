@@ -29,6 +29,7 @@ function EnemyStateAttack(){
 				with (hitID)
 				{
 					p_hp -= 5;
+					audio_play_sound(PlayerDamage, 900, false);
 				}
 			}
 		}

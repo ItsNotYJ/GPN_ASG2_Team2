@@ -30,6 +30,8 @@ function BossStateAttack(){
 				with (hitID)
 				{
 					o_player.p_hp -= irandom_range(8, 15);
+					
+					audio_play_sound(PlayerDamage, 900, false);
 				}
 			}
 		}

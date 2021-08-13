@@ -46,6 +46,8 @@ function PlayerStateAttackLight(){
 				{		
 					if(e_hp > 0)
 						EnemyHit(global.playerStrength);
+						
+					audio_play_sound(HitSound, 900, false);
 				}
 			}
 		}
