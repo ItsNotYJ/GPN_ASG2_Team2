@@ -9,8 +9,12 @@ function EnemyHit(damage){
 	dir = point_direction(o_player.x, o_player.y, x, y)
 	dis = 25;
 	
-	moveX = lengthdir_x(dis, dir);
-	moveY = lengthdir_y(dis, dir);
+	if(room != BossRoom1)
+	{
+		moveX = lengthdir_x(dis, dir);
+		moveY = lengthdir_y(dis, dir);
+	}
+	
 	
 	if(tilemap_get_at_pixel(tilemap, x + moveX, y))
 	{
@@ -45,5 +49,11 @@ function EnemyHit(damage){
 			global.gold += irandom_range(10, 20);
 			sprite_index = s_enemy_dead;
 		}
+		if (sprite_index == s_eyeball)
+		{
+			global.gold += irandom_range(10, 20);
+			sprite_index = s_eyeball_dead;
+		}
+		
 	}
 }
