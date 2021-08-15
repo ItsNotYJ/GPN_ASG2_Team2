@@ -39,18 +39,15 @@ function EnemyHit(damage){
 	{	
 		if (sprite_index == s_boss_idle || sprite_index == s_boss_attack)
 		{
-			global.gold += irandom_range(100, 300);
 			sprite_index = s_boss_death;
 		}
 		
 		if (sprite_index == s_enemy_attack || sprite_index == s_enemy_idle || sprite_index == s_enemy_idle_wonder)
 		{
-			global.gold += irandom_range(10, 20);
 			sprite_index = s_enemy_dead;
 		}
 		if (sprite_index == s_eyeball)
 		{
-			global.gold += irandom_range(10, 20);
 			sprite_index = s_eyeball_dead;
 		}
 	}
