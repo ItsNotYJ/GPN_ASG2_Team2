@@ -34,7 +34,6 @@ function EnemyHit(damage){
 	
 	y += moveY;
 	
-	// Maybe add hit effects or sound effect in the future here
 	}
 	else
 	{	
@@ -54,6 +53,5 @@ function EnemyHit(damage){
 			global.gold += irandom_range(10, 20);
 			sprite_index = s_eyeball_dead;
 		}
-		
 	}
 }

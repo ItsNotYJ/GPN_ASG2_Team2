@@ -8,11 +8,7 @@ draw_sprite(s_statbar, 0, statbar_x, statbar_y);
 
 // Draw Key
 draw_sprite(s_hud_key, 0, key_x, key_y);
-draw_text_transformed(gold_x + 40, key_y, string(global.keys), 1.5, 1.5, 0);
-
-// Draw Gold
-draw_sprite(s_hud_gold, 0, gold_x, gold_y);
-draw_text_transformed(gold_x + 40, gold_y, string(global.gold), 1.5, 1.5, 0);
+draw_text_transformed(key_x + 40, key_y, string(global.keys), 1.5, 1.5, 0);
 
 if (isOpen)
 {

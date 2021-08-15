@@ -1,2 +1,3 @@
 // Restart Game
-game_restart();
+if (global.alive == false)
+	game_restart();

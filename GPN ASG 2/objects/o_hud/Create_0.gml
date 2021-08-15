@@ -21,12 +21,6 @@ key_y = 50;
 
 global.keys = 0;
 
-// Gold
-gold_x = 10;
-gold_y = 80;
-
-global.gold = 0;
-
 // Inventory
 isOpen = false;
 
