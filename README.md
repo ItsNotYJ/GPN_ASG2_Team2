@@ -10,11 +10,12 @@ Github Link - https://github.com/ItsNotYJ/GPN_ASG2_Team2
 You the player, play as Orion who is our protagonist that has to battle through a trial in order to earn the right to return to Elysium.
 
 ### Citations
-#### Sprites / Tile Assets
+#### Character Sprites / Tile Assets
 * [Tileset](https://rekkimaru.itch.io/dungeon-rpg-tileset)
 * [Main Character Sprite](https://szadiart.itch.io/rpg-main-character)
 * [Reaper Sprite](https://samuellee.itch.io/reaper-animated-pixel-art)
 * [Demon Boss Sprite](https://ansimuz.itch.io/gothicvania-patreon-collection)
+* [Eyeball Sprite](https://elthen.itch.io/2d-pixel-art-flying-eye-monster)
 
 #### GUI / HUB Assets
 * [Statbar](https://adwitr.itch.io/pixel-health-bar-asset-pack-2)
