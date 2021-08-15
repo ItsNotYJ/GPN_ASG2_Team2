@@ -16,7 +16,11 @@ function DialogueResponses(){
 		{
 			if(global.inBattle)
 			{
-				with(o_warp_boss) room_goto(BossRoom1);
+				with(o_warp_boss) 
+				{
+					room_goto(BossRoom1);
+					global.keys = 0;
+				}
 			}
 			else
 			{
