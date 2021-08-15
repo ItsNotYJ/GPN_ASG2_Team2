@@ -1,5 +1,6 @@
 # Back to Elysium
-Github Link - https://github.com/ItsNotYJ/GPN_ASG2_Team2
+## Share the Game!
+* [Github Link](https://github.com/ItsNotYJ/GPN_ASG2_Team2)
 
 ### Developers
 * **Ho Yan Jie - S10205286**
